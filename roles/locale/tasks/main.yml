@@ -1,0 +1,5 @@
+- name: Change time and date language
+  command: localectl set-locale LC_TIME=en_US.utf8
+  become: yes
+  become_user: root
+  become_method: sudo

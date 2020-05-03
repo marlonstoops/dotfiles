@@ -1,0 +1,26 @@
+# Installation
+- import_tasks: debian.yml
+  when: ansible_os_family == "Debian"
+- import_tasks: redhat.yml
+  when: ansible_os_family == "RedHat"
+- import_tasks: mac.yml
+  when: ansible_os_family == "Darwin"
+
+- name: Create directories if they do not exist
+  file:
+    path: "{{ dotfiles_user_home }}/.vim/{{ item }}"
+    state: directory
+    mode: '0755'
+  loop: "{{ folders }}"
+
+- name: git clone plugins
+  git:
+    repo: "{{ item.url }}"
+    dest: "{{ dotfiles_user_home }}/.vim/pack/my-plugins/start/{{ item.path }}"
+  loop: "{{ plugins }}" 
+
+- name: symlink files
+  file:
+    src: "{{ dotfiles_home }}/roles/vim/files/{{ item.path }}/{{ item.file }}" 
+    dest: "{{ dotfiles_user_home }}/.vim/{{ item.path }}/{{ item.file }}"
+  loop: "{{ files }}"

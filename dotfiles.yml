@@ -1,0 +1,24 @@
+- name: Set up local workstation
+  hosts: local
+  roles:
+    - role: git
+      tags:
+        - git
+    - role: apt
+      tags:
+        - apt
+    - role: zsh
+      tags:
+        - zsh
+    - role: fzf
+      tags:
+        - fzf
+    - role: fonts
+      tags:
+        - fonts
+    - role: vim
+      tags:
+        - vim
+    - role: locale 
+      tags:
+        - locale

@@ -1,0 +1,23 @@
+plugins:
+  - { url: 'https://github.com/chr4/nginx.vim', path: 'nginx.vim' }
+  - { url: 'git://github.com/jiangmiao/auto-pairs.git', path: 'auto-pairs.git' }
+  - { url: 'https://github.com/itchyny/lightline.vim', path: 'lightline.vim' }
+  - { url: 'git://github.com/godlygeek/tabular.git', path: 'tabular.git' }
+  - { url: 'git@github.com:michaeljsmith/vim-indent-object.git', path: 'vim-indent-object.git' }
+  - { url: 'https://github.com/plasticboy/vim-markdown.git', path: 'vim-markdown.git' }
+  - { url: 'git@github.com:terryma/vim-multiple-cursors.git', path: 'vim-multiple-cursors.git' }
+
+folders:
+  - 'temp_dirs/undodir'
+  - 'indent'
+  - 'syntax'
+  - 'ftplugin'
+  - 'pack/my-plugins/start'
+  - 'pack/my-plugins/opt'
+  - 'autoload'
+
+files:
+  - { file: 'groovy.vim', path: 'indent' }
+  - { file: 'groovy.vim', path: 'syntax' }
+  - { file: 'dsl.vim', path: 'syntax' }
+  - { file: 'yaml.vim', path: 'ftplugin' }

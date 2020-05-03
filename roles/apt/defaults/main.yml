@@ -1,0 +1,19 @@
+package_upgrade: yes
+packages_apt:
+  - ansible
+  - build-essential
+  - curl
+  - docker-compose
+  - docker.io
+  - htop
+  - wget
+  - make
+  - terminator
+  - flameshot
+  - spotify
+  - keepassxc
+
+packages_deb:
+  - https://discordapp.com/api/download?platform=linux&format=deb
+
+remove_packages:
