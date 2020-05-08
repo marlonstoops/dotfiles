@@ -13,6 +13,13 @@
     mode: '0755'
   loop: "{{ folders }}"
 
+- name: Ensure ssh host key known
+  lineinfile:
+    dest: "{{ dotfiles_user_home }}/.ssh/known_hosts"
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan -trsa -p 22 github.com') }}"
+
 - name: git clone plugins
   git:
     repo: "{{ item.url }}"
