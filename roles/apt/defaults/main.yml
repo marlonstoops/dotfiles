@@ -10,7 +10,6 @@ packages_apt:
   - make
   - terminator
   - flameshot
-  - spotify
   - keepassxc
 
 packages_deb:
