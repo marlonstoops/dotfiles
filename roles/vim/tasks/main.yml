@@ -29,6 +29,6 @@
 - name: symlink files
   file:
     src: "{{ dotfiles_home }}/roles/vim/files/{{ item.path }}/{{ item.file }}" 
-    dest: "{{ dotfiles_user_home }}/.vim/{{ item.path }}/{{ item.file }}"
+    dest: "{{ dotfiles_user_home }}/{{ item.path }}/{{ item.file }}"
     state: link
   loop: "{{ files }}"

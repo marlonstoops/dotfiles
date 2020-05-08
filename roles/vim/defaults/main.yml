@@ -17,7 +17,8 @@ folders:
   - 'autoload'
 
 files:
-  - { file: 'groovy.vim', path: 'indent' }
-  - { file: 'groovy.vim', path: 'syntax' }
-  - { file: 'dsl.vim', path: 'syntax' }
-  - { file: 'yaml.vim', path: 'ftplugin' }
+  - { file: 'groovy.vim', path: '.vim/indent' }
+  - { file: 'groovy.vim', path: '.vim/syntax' }
+  - { file: 'dsl.vim', path: '.vim/syntax' }
+  - { file: 'yaml.vim', path: '.vim/ftplugin' }
+  - { file: '.vimrc', path: '.vimrc' }
