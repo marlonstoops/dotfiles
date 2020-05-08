@@ -22,10 +22,6 @@
     creates: "{{ dotfiles_user_home }}/.zshrc.bak"
   when: zshrc_stat.stat.exists
 
-- name: Remove .zshrc
-  command: rm ~/.zshrc
-  when: zshrc_stat.stat.exists
-
 - name: Symlink .zshrc
   file:
     src: "{{ dotfiles_home }}/roles/zsh/files/zshrc"
