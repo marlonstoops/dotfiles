@@ -32,7 +32,7 @@
   git:
     repo: "{{ item.url }}"
     dest: "{{ dotfiles_user_home }}/.oh-my-zsh/custom/plugins/{{ item.path }}"
-  loop: "{{ custrom_plugins }}" 
+  loop: "{{ custom_plugins }}" 
 
 - name: Symlink "{{ item }}"
   file:
