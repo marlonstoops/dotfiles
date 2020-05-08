@@ -21,4 +21,4 @@ files:
   - { file: 'groovy.vim', path: '.vim/syntax' }
   - { file: 'dsl.vim', path: '.vim/syntax' }
   - { file: 'yaml.vim', path: '.vim/ftplugin' }
-  - { file: '.vimrc', path: '.vimrc' }
+  - { file: '.vimrc', path: './' }
