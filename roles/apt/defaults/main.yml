@@ -15,4 +15,4 @@ packages_apt:
 packages_deb:
   - https://discordapp.com/api/download?platform=linux&format=deb
 
-remove_packages:
+#remove_packages:
