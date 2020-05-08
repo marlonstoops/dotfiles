@@ -5,7 +5,7 @@
     mode: '0755'
 
 - name: install fonts
-    unarchive:
+  unarchive:
     src: https://github.com/IBM/plex/releases/latest/download/TrueType.zip
     dest: "{{ dotfiles_user_home }}/.fonts"
     remote_src: yes
