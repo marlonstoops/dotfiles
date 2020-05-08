@@ -1,3 +1,5 @@
 - name: Install vim with apt
   apt: name=vim state=present
+  become: yes
+  become_user: root
   become_method: sudo

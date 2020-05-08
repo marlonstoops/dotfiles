@@ -1,3 +1,5 @@
 - name: Install vim with yum
   yum: name=vim state=present
+  become: yes
+  become_user: root
   become_method: sudo
