@@ -1,6 +1,3 @@
-- apt_repository: 
-    repo: 'ppa:lutris-team/lutris'
-
 - name: Upgrade apt
   apt: upgrade=yes
   when: package_upgrade
