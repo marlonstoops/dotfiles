@@ -11,6 +11,7 @@ packages_apt:
   - terminator
   - flameshot
   - keepassxc
+  - fzf
 
 packages_deb:
   - https://discordapp.com/api/download?platform=linux&format=deb

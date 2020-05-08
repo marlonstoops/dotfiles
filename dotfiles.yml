@@ -10,9 +10,6 @@
     - role: zsh
       tags:
         - zsh
-    - role: fzf
-      tags:
-        - fzf
     - role: fonts
       tags:
         - fonts
