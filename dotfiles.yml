@@ -19,6 +19,6 @@
     - role: locale 
       tags:
         - locale
-    - role: autostart
+    - role: startup 
       tags:
-        - autostart
+        - startup
