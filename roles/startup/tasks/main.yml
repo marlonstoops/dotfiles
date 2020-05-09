@@ -6,7 +6,7 @@
 
 - name: symlink autostart files
   file:
-    src: "{{ dotfiles_home }}/roles/autostart/files/{{ item }}" 
+    src: "{{ dotfiles_home }}/roles/startup/files/{{ item }}" 
     dest: "{{ dotfiles_user_home }}/.config/autostart/{{ item }}"
     state: link
   loop: "{{ autostart }}"
