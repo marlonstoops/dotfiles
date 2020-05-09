@@ -1,0 +1,12 @@
+- name: Create autostart directory if they do not exist
+  file:
+    path: "{{ dotfiles_user_home }}/.config/autostart"
+    state: directory
+    mode: '0755'
+
+- name: symlink autostart files
+  file:
+    src: "{{ dotfiles_home }}/roles/autostart/files/{{ item }}" 
+    dest: "{{ dotfiles_user_home }}/.config/autostart/{{ item }}"
+    state: link
+  loop: "{{ autostart }}"

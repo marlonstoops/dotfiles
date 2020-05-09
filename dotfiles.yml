@@ -19,3 +19,6 @@
     - role: locale 
       tags:
         - locale
+    - role: autostart
+      tags:
+        - autostart
