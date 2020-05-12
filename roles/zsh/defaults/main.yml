@@ -1,6 +1,7 @@
 custom_files:
   - customrc.zsh
   - opts.zsh
+  - alias.zsh
 
 custom_plugins:
   - { url: 'https://github.com/zsh-users/zsh-autosuggestions', path: 'zsh-autosuggestions' }

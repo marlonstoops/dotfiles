@@ -70,9 +70,9 @@ ZSH_THEME="re5et"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-       	zsh-autosuggestions
-       	docker
-       	docker-compose
+    zsh-autosuggestions
+    docker
+    docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
