@@ -40,3 +40,6 @@
     dest: "{{ dotfiles_user_home }}/.oh-my-zsh/custom/{{ item }}"
     state: link
   loop: "{{ custom_files }}"
+
+- name: Make zsh the default shell
+  command: chsh -s $(which zsh)
