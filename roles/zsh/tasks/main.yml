@@ -41,5 +41,11 @@
     state: link
   loop: "{{ custom_files }}"
 
-- name: Make zsh the default shell
-  command: chsh -s $(which zsh)
+- name: set default shell for users
+  become: yes
+  user:
+    name: '{{ username }}'
+    shell: /bin/zsh
+  with_items: "{{ users | map(attribute='username') | list }}"
+  loop_control:
+    loop_var: username
