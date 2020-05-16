@@ -46,6 +46,6 @@
   user:
     name: '{{ username }}'
     shell: /bin/zsh
-  with_items: "{{ users | map(attribute='username') | list }}"
+  with_items: "{{ users }}"
   loop_control:
     loop_var: username
