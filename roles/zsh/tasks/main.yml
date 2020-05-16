@@ -40,12 +40,3 @@
     dest: "{{ dotfiles_user_home }}/.oh-my-zsh/custom/{{ item }}"
     state: link
   loop: "{{ custom_files }}"
-
-- name: set default shell for users
-  become: yes
-  user:
-    name: '{{ username }}'
-    shell: /bin/zsh
-  with_items: "{{ users }}"
-  loop_control:
-    loop_var: username
