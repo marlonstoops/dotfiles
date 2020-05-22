@@ -1,3 +1,15 @@
+- name: Create Bitwarden directory if it does not exist
+  file:
+    path: "{{ dotfiles_user_home }}/.local/bin"
+    state: directory
+    mode: '0755'
+
+- name: Create Bitwarden directory if it does not exist
+  file:
+    path: "{{ dotfiles_user_home }}/.local/share/applications"
+    state: directory
+    mode: '0755'
+
 - name: Download Bitwarden
   get_url:
     url: https://vault.bitwarden.com/download/?app=desktop&platform=linux
