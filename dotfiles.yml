@@ -22,3 +22,6 @@
     - role: startup 
       tags:
         - startup
+    - role: bitwarden
+      tags:
+        - bitwarden

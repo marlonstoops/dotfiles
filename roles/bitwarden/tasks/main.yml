@@ -1,0 +1,11 @@
+- name: Download Bitwarden
+  get_url:
+    url: https://vault.bitwarden.com/download/?app=desktop&platform=linux
+    dest: "{{ dotfiles_user_home }}/.local/bin/Bitwarden.AppImage"
+    mode: '0500'
+
+- name: symlink bitwarden.desktop file
+  file:
+    src: "{{ dotfiles_home }}/roles/bitwarden/files/bitwarden.desktop"
+    dest: "{{ dotfiles_user_home }}/.local/share/applications/bitwarden.desktop"
+    state: link

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=bitwarden
+Icon=bitwarden
+Exec=bitwarden
+Terminal=false
+Type=Application
