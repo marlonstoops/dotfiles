@@ -197,7 +197,11 @@ endif
 com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
 com! FormatJSON :%!jq --sort-keys .
 
+"F9 to fold and unfold
 inoremap <F9> <C-O>za
 nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
+
+"F2 to fold and unfold entire file
+nnoremap <expr> <f2> &foldlevel ? 'zM' :'zR'
