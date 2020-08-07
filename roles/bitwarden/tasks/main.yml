@@ -14,7 +14,7 @@
   get_url:
     url: https://vault.bitwarden.com/download/?app=desktop&platform=linux
     dest: "{{ dotfiles_user_home }}/.local/bin/bitwarden"
-    mode: '0500'
+    mode: '0700'
 
 - name: symlink bitwarden.desktop file
   file:
