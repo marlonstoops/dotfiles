@@ -12,6 +12,8 @@ packages_apt:
   - flameshot
   - keepassxc
   - fzf
+  - xdotool
+  - xclip
 
 packages_deb:
   - https://discordapp.com/api/download?platform=linux&format=deb
