@@ -5,17 +5,24 @@ packages_apt:
   - curl
   - docker-compose
   - docker.io
-  - htop
-  - wget
-  - make
-  - terminator
   - flameshot
-  - keepassxc
   - fzf
-  - xdotool
+  - htop
+  - keepassxc
+  - make
+  - signal-desktop
+  - terminator
+  - wget
   - xclip
+  - xdotool
 
 packages_deb:
   - https://discordapp.com/api/download?platform=linux&format=deb
 
 #remove_packages:
+
+apt_key:
+  - { url: 'https://updates.signal.org/desktop/apt/keys.asc', id: 'DBA36B5181D0C816F630E889D980A17457F6FB06'}
+
+apt_repository:
+  - { repo: 'deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main', file: 'signal-xenial.list' }
