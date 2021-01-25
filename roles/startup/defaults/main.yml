@@ -2,3 +2,4 @@ autostart:
  - 'Flameshot.desktop' 
  - 'Spotify.desktop'
  - 'Discord.desktop'
+ - 'signal-desktop.desktop'
