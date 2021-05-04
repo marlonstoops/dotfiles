@@ -1,4 +1,7 @@
 - name: Add an Apt signing key, will not download if present
+  become: yes
+  become_user: root
+  become_method: sudo
   ansible.builtin.apt_key:
     id: "{{ item.id }}" 
     url: "{{ item.url }}"
@@ -6,6 +9,9 @@
   loop: "{{ apt_key }}"
 
 - name: Add specified repository into sources list using specified filename
+  become: yes
+  become_user: root
+  become_method: sudo
   ansible.builtin.apt_repository:
     repo: "{{ item.repo }}" 
     state: present
