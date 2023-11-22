@@ -61,7 +61,7 @@ set mat=2
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-" Set utf8 as standard encoding and en_US as the standard language
+" Set UTF-8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
@@ -110,7 +110,7 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
-" Delete trailing white space on save, useful for some filetypes ;)
+" Delete trailing white space on save, useful for some file types ;)
 fun! CleanExtraSpaces()
     let save_cursor = getpos(".")
     let old_query = getreg('/')
@@ -193,7 +193,7 @@ if getline(1) =~ '^#!.*[/\\]groovy\>'
   setf groovy
 endif
 
-"formating stuff
+"formatting stuff
 com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
 com! FormatJSON :%!jq --sort-keys .
 
