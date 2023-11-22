@@ -60,6 +60,9 @@ ZSH_THEME="re5et"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+SAVEHIST=100000
+HISTSIZE=100000
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -69,7 +72,8 @@ ZSH_THEME="re5et"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
+    aliases
+    git
     zsh-autosuggestions
     docker
     docker-compose

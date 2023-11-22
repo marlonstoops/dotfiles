@@ -1,3 +1,6 @@
 alias jelasticssh='ssh 1127@gate.cloud.interhostsolutions.be -p 3022'
 alias cdr='cd $(git rev-parse --show-toplevel)'
 alias autotype='sleep 2.0; xdotool type "$(xclip -o -selection clipboard)"'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias mysqlphpmyadmin='docker run --name myadmin --rm -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin'
+alias pgphpmyadmin='docker run --name myadmin --rm -e PMA_ARBITRARY=1 -p 8080:80 dockage/phppgadmin'
