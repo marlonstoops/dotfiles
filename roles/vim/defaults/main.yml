@@ -6,6 +6,7 @@ plugins:
   - { url: 'git@github.com:michaeljsmith/vim-indent-object.git', path: 'vim-indent-object.git' }
   - { url: 'git@github.com:plasticboy/vim-markdown.git', path: 'vim-markdown.git' }
   - { url: 'git@github.com:terryma/vim-multiple-cursors.git', path: 'vim-multiple-cursors.git' }
+  - { url: 'git@github.com:tpope/vim-surround.git', path: 'vim-surround.git' }
 
 folders:
   - 'temp_dirs/undodir'
