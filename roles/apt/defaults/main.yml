@@ -3,8 +3,6 @@ packages_apt:
   - ansible
   - build-essential
   - curl
-  - docker-compose
-  - docker.io
   - flameshot
   - fzf
   - htop
